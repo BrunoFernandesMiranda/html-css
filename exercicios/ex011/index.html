@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem_pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_media.png" type="image/png">
+        <img src="imagens/imagem_grande.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <audio preload="metadata" controls >
+        <source src="midia/Flow_mp3.mp3" type="audio/mp3">
+    </audio>
+    <h1>Reproduzindo video</h1>
+    <video src="midia/arrogante.mp4"  controls ></video>
+</body>
+</html>
